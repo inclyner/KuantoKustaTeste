@@ -14,7 +14,7 @@ async function bootstrap() {
     .build();
 
   const doc = SwaggerModule.createDocument(app, cfg);
-  SwaggerModule.setup('docs', app, doc, {
+  SwaggerModule.setup('cart/docs', app, doc, {
     swaggerOptions: { persistAuthorization: true },
   });
   await app.listen(process.env.PORT ?? 3002);
